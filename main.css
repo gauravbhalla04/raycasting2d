@@ -1,0 +1,293 @@
+a {
+    text-decoration: none;
+    color: #ff9300;
+}
+
+
+body {
+    display: block;
+    background: #141414;
+    margin: 0px;
+    z-index: 0;
+    font-family: 'Sen', sans-serif;
+}
+
+.section {
+    position: relative;
+    min-height: 85vh;
+}
+
+footer {
+  position: absolute;
+  margin-top: 2%;
+  height: 50;
+  width: 100%;
+  font-size: 0.8em;
+  left: 5%;
+  bottom: 5%;
+  background-color: #141414;
+}
+
+p {
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+table {
+    float: left;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#logo {
+    width: 21%;
+}
+
+
+#navbar{
+    margin: 0px;
+    float: left;
+    justify-content: center;
+}
+
+#footerText {
+    color: #ff9300;
+}
+
+#projects {
+    position: sticky;
+    padding-left: 5rem;
+    width: 100vw;
+    height: 2.5rem;
+    bottom: 5%;
+    padding-top: 2rem;
+}
+
+.menuItemsOne {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 40%;
+
+    transform: translate(-50%, -50%);
+
+}
+.menuItemsTwo {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+.menuItemsThree {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 62.5%;
+
+    transform: translate(-50%, -50%);
+
+}
+.menuItemsFour{
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 70%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.inactive {
+    opacity: 0.7;
+}
+
+.socialsOne {
+
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 85%;
+
+    transform: translate(-50%, -50%);
+}
+.socialsTwo {
+
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 90%;
+
+    transform: translate(-50%, -50%);
+}
+.socialsThree {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 95%;
+
+    transform: translate(-50%, -50%);
+}
+
+.projectThumbnail {
+    width: 15rem;
+    margin-top: 5rem;
+}
+
+.imageHolder {
+    width: 90rem;
+    padding-left: 20rem;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.projectCaption {
+    width:90rem;
+    padding-right: 20rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1200px){
+    /*For Mobile only*/
+
+    a{
+        font-size: 0.7rem;
+    }
+
+    .navBar {
+        grid-template-columns: [start] 1fr [logo-end] 1fr [menu-start] 1fr [menu-end];
+        grid-template-rows: repeat(2,50px);
+    }
+
+    .socialsOne{
+        position: fixed;
+        right :0;
+        bottom: 0;
+        padding: 1em;
+    }
+    .socialsTwo{
+        position: fixed;
+        right :0;
+        bottom: 0;
+        padding: 1em;
+    }
+    .socialsThree{
+        position: fixed;
+        right :0;
+        bottom: 0;
+        padding: 1em;
+    }
+
+    .imageHolder {
+        width: 24rem;
+        padding-left: 0px;
+        margin-left: 0;
+    }
+    .projectThumbnail {
+        width: 500;
+        margin-top: 5rem;
+    }
+
+    .projectCaption {
+        padding-left: 10rem;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    /*For Mobile only*/
+    a {
+        font-size: 0.3rem;
+    }
+
+
+    #logo {
+        width: 7rem;
+        align-self: flex-start;
+        padding-left:0;
+        padding-top:1.6em;
+
+    }
+    .menuItemsOne{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+    .menuItemsTwo{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+    .menuItemsThree{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+    .menuItemsFour{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+
+    .imageHolder {
+        width: 12rem;
+        padding-left: 0px;
+        margin-left: 0;
+    }
+    .projectThumbnail {
+        width: 250px;
+        margin-top: 5rem;
+    }
+
+    .projectCaption {
+        padding-left: 5rem;
+    }
+}
